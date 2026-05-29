@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Agro<span>Sustentável</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-dark-mode" class="btn-mode" aria-label="Alternar modo escuro">Ajustar Tema</button>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Agro forte, futuro sustentável</h2>
+                <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+                <button id="btn-saiba-mais" class="btn-primary">Descubra Como</button>
+                <p id="mensagem-dinamica" class="hidden-msg"></p>
+            </div>
+        </section>
+
+        <section id="pilares" class="pilares-section">
+            <div class="section-title">
+                <h3>Nossos Pilares de Equilíbrio</h3>
+                <p>Como a tecnologia e a natureza caminham juntas na agricultura moderna.</p>
+            </div>
+
+            <div class="cards-container">
+                <article class="card">
+                    <div class="card-img-placeholder bg-agro"></div>
+                    <div class="card-body">
+                        <h4>Produção Eficiente</h4>
+                        <p>Uso de tecnologias de precisão para otimizar a colheita, reduzir o desperdício de insumos e aumentar a segurança alimentar global.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder bg-eco"></div>
+                    <div class="card-body">
+                        <h4>Preservação Ambiental</h4>
+                        <p>Manejo correto do solo, rotação de culturas e proteção de fontes hidrográficas garantindo a renovação dos recursos naturais.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder bg-tech"></div>
+                    <div class="card-body">
+                        <h4>Energia Limpa</h4>
+                        <p>Implementação de matrizes energéticas renováveis no campo, como a energia solar e o uso de biomassa gerada por resíduos.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="contato-section">
+            <div class="form-container">
+                <h3>Una-se ao Movimento</h3>
+                <p>Receba novidades e relatórios sobre o agronegócio sustentável.</p>
+                
+                <form id="form-contato">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo:</label>
+                        <input type="email" id="email" name="email" placeholder="seu-email@dominio.com">
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Inscrição</button>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 AgroSustentável. Cultivando a produção, protegendo o amanhã.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
